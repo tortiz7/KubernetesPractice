@@ -1,0 +1,1 @@
+k8s-default-kurak8de-fdf42648b8	k8s-default-kurak8de-fdf42648b8-929542057.us-east-1.elb.amazonaws.com

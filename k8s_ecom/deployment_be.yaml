@@ -1,0 +1,20 @@
+apiVersion: apps/v1   # First part, what kind of project you want to make - create this whole template by just typing "d" once you have the K8 plugin installed
+kind: Deployment
+
+metadata:             # 
+  name: ecommerce-be-app
+
+spec:                 # Creates the project object for K8
+  selector:
+    matchLabels:
+      app: ecommerce-be
+  template:
+    metadata:
+      labels:
+        app: ecommerce-be
+    spec:
+      containers: 
+      - name: ecommerce-frontend
+        image: djtoler/dp9frontend
+        ports: 
+        - containerPort: 8000
